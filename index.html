@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Alura</title>
+    <link rel="stylesheet" href="/Styles/style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <img src="/Assets/Logo Alura.png" alt="logoAlura">
+    </header>
+
+    <main class="corpo">
+        <!--entrada-->
+        <section class="caixa__entrada__texto">
+           
+            <textarea class="container__texto__entrada" type="text" id="entradaTexto" cols="40" rows="10" placeholder="Digite seu texto..."></textarea>
+
+            <div class="alerta">
+                <p><span class="vetor">!</span>Apenas letras minúsculas e sem acento.</p>
+            </div>
+        
+        <!--Botões-->
+            <div class="botoes">
+        
+                <button class="botao" onclick="botaoCrip() ; esconderImagem()">Criptografar</button>
+                <button class="botao" onclick="botaoDescrip() ; esconderImagem()">Descriptografar</button>
+        
+            </div>
+        <!--Botões-->
+
+        </section>
+        <!--entrada-->
+
+        <!--saída-->
+        <section class= "caixa__saida__texto">
+            
+            <textarea class="container__texto__saida" id="resultado">
+            </textarea>
+
+            <div class="imagem__condicional" id="imgCond">
+                
+                <img class="msg__condicional__img" src="/Assets/Arte Criptografia.png" alt="sem_texto_para_descriptografar">
+
+                <div class="texto__cond">
+                    <h2 class="texto__cond__1">Nehuma mensagem encontrada</h2>
+                    <p class="texto__cond__2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+
+            </div>
+
+            <button class="botao__copiar" id="botaoCopiar"  onclick="copiarResultado()">Copiar</button>
+        </section>
+
+        <!--saída-->
+    </main>
+    
+    <footer class="rodape">
+        <a href="https://github.com/">Criado por Matheus Faustino, 2024</a>
+    </footer>
+
+<script type="text/javascript" src="/app.js"></script>
+
+</body>
+
+</html>
